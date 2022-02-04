@@ -1,0 +1,90 @@
+:root{
+    --red:#e50914;
+    --black:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /** Se um elemento tiver um valor de largura excedente não 
+    ultrapassarar a largura do elemento pai com o border-box**/
+}
+
+body{
+    background-color:var(--black);
+    color:white
+}
+
+header .container{
+    display: flex;
+    /* flex-direction: row; default */
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1.logo{
+    margin-left: 10px;
+    color: var(--red);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    margin-right: 10px;
+    color:#aaa;
+    text-decoration: none;
+}
+header nav a:hover{
+    color:#fff
+}
+main .filme-principal{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/fundo-bigbang.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .filme-principal .titulo{
+    margin: 25% 30% 50px 40px;
+    font-size:40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .filme-principal .descricao{
+    margin:auto 10px 50px 40px;
+    text-indent: 20px;
+    text-align: justify;
+}
+main .filme-principal .titulo, main .filme-principal .descricao{
+    text-shadow: 0px 0px 10px #000;
+}
+
+main .filme-principal .botoes{
+    
+}
+main .filme-principal .botao{
+    background-color: rgba(0,0,0,.5);
+    border:none;
+    color:white;
+    padding: 15px;
+    cursor:pointer;
+    transition: .4s ease-out;
+    margin: 10px;
+}
+
+main .filme-principal .botao:hover{
+        background-color: rgba(255,255,255,.5);
+        color:black
+}
+
+main .filme-principal .botao i{
+    margin-right: 8px;
+}
+.filme-principal .container{
+    width:70%;
+    
+}
